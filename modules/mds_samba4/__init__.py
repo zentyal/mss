@@ -5,7 +5,7 @@ _ = TranslationManager().translate
 
 
 def get_config_info():
-    return ("setup-samba4.sh", ["smb_mode", "smb_domain", "smb_passwd"])
+    return ("setup-samba4.sh", ["smb_mode", "smb_domain", "smb_passwd", "fw_lan", "fw_wan"])
 
 def valid_domain(string):
     """Validate domain input"""

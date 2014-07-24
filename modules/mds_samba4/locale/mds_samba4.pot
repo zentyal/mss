@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-24 11:14+0200\n"
+"POT-Creation-Date: 2014-07-24 18:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 
 #: .repositories[0].name
-msgid "zentyal devel samba4"
+msgid "Zentyal samba 4 development repository"
 msgstr ""
 
 #: .actions[0].name
@@ -75,6 +75,34 @@ msgstr ""
 msgid "smb_passwd"
 msgstr ""
 
+#: .config[3].help
+msgid ""
+"Configure the firewall to accept SAMBA related traffic on interfaces "
+"configured as 'internal'"
+msgstr ""
+
+#: .config[3].name
+msgid "fw_lan"
+msgstr ""
+
+#: .config[3].label
+msgid "Allow connections from internal networks"
+msgstr ""
+
+#: .config[4].help
+msgid ""
+"Configure the firewall to accept SAMBA related traffic on interfaces "
+"configured as 'external'"
+msgstr ""
+
+#: .config[4].name
+msgid "fw_wan"
+msgstr ""
+
+#: .config[4].label
+msgid "Allow connections from external networks"
+msgstr ""
+
 #: .categories[0].name
 msgid "Users"
 msgstr ""
@@ -83,7 +111,7 @@ msgstr ""
 msgid "Windows domain controller and file sharing management"
 msgstr ""
 
-#: mds_samba4/setup-samba4.sh:15
+#: mds_samba4/setup-samba4.sh:25
 msgid ""
 "You can now use the management interface to manage your Windows users and "
 "shares at https://@HOSTNAME@/mmc/."

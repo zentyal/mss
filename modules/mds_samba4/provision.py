@@ -127,10 +127,6 @@ def provision_samba4(mode, realm, admin_password):
         sleep(SLEEP_TIME)
         check_ldap_is_running()
 
-    def stop_iptables_services():
-        print "Stopping iptables service"
-        shlaunch("service iptables stop")
-
     def start_samba4_service():
         print "Starting samba4 service"
         shlaunch("service samba4 start")
@@ -155,7 +151,6 @@ def provision_samba4(mode, realm, admin_password):
     write_config_files()
 
     reconfig_ldap_service()
-    stop_iptables_services()
 
     start_samba4_service()
     start_s4sync_service()

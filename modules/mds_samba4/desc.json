@@ -63,6 +63,20 @@
             "validation": "valid_password",
             "label": "Administrator password",
             "help": "Password for the Microsoft domain Administrator account."
+        },
+        {
+            "type": "check",
+            "name": "fw_lan",
+            "default": "on",
+            "label": "Allow connections from internal networks",
+            "help": "Configure the firewall to accept SAMBA related traffic on interfaces configured as 'internal'"
+        },
+        {
+            "type": "check",
+            "name": "fw_wan",
+            "default": "off",
+            "label": "Allow connections from external networks",
+            "help": "Configure the firewall to accept SAMBA related traffic on interfaces configured as 'external'"
         }
     ],
     "module": {
